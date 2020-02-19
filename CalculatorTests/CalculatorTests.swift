@@ -10,25 +10,31 @@ import XCTest
 @testable import Calculator
 
 class CalculatorTests: XCTestCase {
-
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    func testAdd() {
+        
+        let calc = Calc()
+        
+        calc.val1 = 5.7
+        calc.val2 = 3.6
+        calc.operation = .add
+        calc.operate()
+        XCTAssert(calc.val1 == (5.7 + 3.6))
+        
+        calc.val2 = 2.8
+        calc.operation = .add
+        calc.operate()
+        XCTAssert(calc.val1 == (5.7 + 3.6 + 2.8))
+        
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testPercentage() {
+        let calc = Calc()
+        
+        calc.val1 = 70
+        calc.operation = .percentage
+        calc.operate()
+        XCTAssert(calc.val1 == (70 / 100))
     }
 
 }

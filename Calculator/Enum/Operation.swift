@@ -15,4 +15,5 @@ enum Operation {
     case divide
     case percentage
     case plusMinus
+    case equals
 }

@@ -60,6 +60,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="operation" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="clearBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bs3-oi-O0t"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riV-GS-uTm" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="72.5" y="0.0" width="62.5" height="62.5"/>
@@ -67,6 +70,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="operation" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="plusMinusBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Brv-Zd-u1a"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbj-8v-2bl" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="145" y="0.0" width="62.5" height="62.5"/>
@@ -74,105 +80,144 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="operation" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="percentageBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eu6-9Y-EBS"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TsA-Ws-7u2" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TsA-Ws-7u2" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="217.5" y="0.0" width="62.5" height="62.5"/>
                                                 <state key="normal" title="/"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="operation" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="operationBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x3U-XZ-7C0"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hml-24-eZD">
                                         <rect key="frame" x="0.0" y="72.5" width="280" height="62.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBL-UF-4zO" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBL-UF-4zO" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
                                                 <state key="normal" title="7"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="operation" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mML-dc-dSF"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OI-hm-v0u" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OI-hm-v0u" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="72.5" y="0.0" width="62.5" height="62.5"/>
                                                 <state key="normal" title="8"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="operation" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UrZ-k4-ixD"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kz7-Re-0G6" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kz7-Re-0G6" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="145" y="0.0" width="62.5" height="62.5"/>
                                                 <state key="normal" title="9"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="operation" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MMI-51-MXb"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aqk-ks-uLN" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aqk-ks-uLN" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="217.5" y="0.0" width="62.5" height="62.5"/>
                                                 <state key="normal" title="X"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="operation" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="operationBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aN7-76-0QS"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="i3n-SD-c6b">
                                         <rect key="frame" x="0.0" y="145" width="280" height="62.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4o-Ev-Xai" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4o-Ev-Xai" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
                                                 <state key="normal" title="4"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="operation" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m73-lK-tPR"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4V-qn-dSF" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4V-qn-dSF" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="72.5" y="0.0" width="62.5" height="62.5"/>
                                                 <state key="normal" title="5"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="operation" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MEg-aZ-iKt"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Qd-pQ-Xxg" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Qd-pQ-Xxg" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="145" y="0.0" width="62.5" height="62.5"/>
                                                 <state key="normal" title="6"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="operation" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e64-5v-hn0"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMO-rM-5wP" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMO-rM-5wP" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="217.5" y="0.0" width="62.5" height="62.5"/>
                                                 <state key="normal" title="-"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="operation" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="operationBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xTj-jI-x0C"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4Il-jd-acS">
                                         <rect key="frame" x="0.0" y="217.5" width="280" height="62.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BdO-KD-eM4" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BdO-KD-eM4" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
                                                 <state key="normal" title="1"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="operation" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ukc-Pg-Z6J"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAL-us-ybF" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAL-us-ybF" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="72.5" y="0.0" width="62.5" height="62.5"/>
                                                 <state key="normal" title="2"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="operation" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ect-Xu-3VG"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixi-a2-BVv" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixi-a2-BVv" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="145" y="0.0" width="62.5" height="62.5"/>
                                                 <state key="normal" title="3"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="operation" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VzE-9P-hBh"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTf-Ia-FME" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="217.5" y="0.0" width="62.5" height="62.5"/>
@@ -180,37 +225,54 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="operation" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="operationBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TGi-vQ-eSR"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zgF-mh-vza">
                                         <rect key="frame" x="0.0" y="290" width="280" height="62.5"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NQZ-OL-8ea">
-                                                <rect key="frame" x="0.0" y="0.0" width="135" height="62.5"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ck-ht-8WW" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
-                                                        <state key="normal" title="0"/>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="operation" value="NO"/>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqq-7v-mET" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="72.5" y="0.0" width="62.5" height="62.5"/>
-                                                        <state key="normal" title="."/>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="operation" value="NO"/>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veS-HR-hYU" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="145" y="0.0" width="135" height="62.5"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ck-ht-8WW" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
+                                                <state key="normal" title="0"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="operation" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i9v-rK-EVa"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvA-ku-pO5" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="72.5" y="0.0" width="62.5" height="62.5"/>
+                                                <state key="normal" title="."/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="operation" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="decimalBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2zf-gM-MX3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqq-7v-mET" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="145" y="0.0" width="62.5" height="62.5"/>
+                                                <state key="normal" title="del"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="operation" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="deleteBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eu6-bN-fx4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veS-HR-hYU" customClass="SymbolButton" customModule="Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="217.5" y="0.0" width="62.5" height="62.5"/>
                                                 <state key="normal" title="="/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="operation" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="operationBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nW5-Di-Do8"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -229,6 +291,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="resultLbl" destination="Vc9-bo-k9S" id="AXB-Hw-HXW"/>
+                        <outlet property="secondaryLbl" destination="vlV-IF-Ivw" id="ZnQ-9U-WRy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
